@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit or Skip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heat check ?!</h1>
+        
+        <div class="admin-panel">
+            <h3>Admin Panel</h3>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="imageInput" accept="image/*" multiple>
+                <button type="submit">Upload Images</button>
+            </form>
+            <div id="uploadStatus"></div>
+        </div>
+        
+        <h2>Who's got more aura ?</h2>
+        
+        <div class="comparison">
+            <div class="person">
+                <img id="person1" src="" alt="Person 1">
+                <div class="rating">Rating: <span id="rating1">1500</span></div>
+                <div class="vote-buttons">
+                    <button onclick="vote(0, 'pick')" class="hit-btn">Hit</button>
+                    <button onclick="vote(0, 'skip')" class="skip-btn">Skip</button>
+                </div>
+            </div>
+            
+            <div class="vs">VS</div>
+            
+            <div class="person">
+                <img id="person2" src="" alt="Person 2">
+                <div class="rating">Rating: <span id="rating2">1500</span></div>
+                <div class="vote-buttons">
+                    <button onclick="vote(1, 'pick')" class="hit-btn">Hit</button>
+                    <button onclick="vote(1, 'skip')" class="skip-btn">Skip</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <p>Total Comparisons: <span id="totalVotes">0</span></p>
+        </div>
+
+        <!-- Add Leaderboard -->
+        <div class="leaderboard">
+            <h3>Leaderboard</h3>
+            <div class="leaderboard-content" id="leaderboard">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
