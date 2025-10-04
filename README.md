@@ -21,7 +21,7 @@ This is a dynamic and interactive image rating web application where users can u
 
 ---
 
-## 📸 Screenshot
+<img width="1497" height="968" alt="image" src="https://github.com/user-attachments/assets/568177da-4e2e-4de6-9417-aa54ccfd527e" />
 
 
 ---
@@ -42,3 +42,4 @@ This is a dynamic and interactive image rating web application where users can u
     * Click **HIT** under the image you like more.
     * Click **SKIP** if you don't want to vote on the current pair.
 4.  **Check the Leaderboard**: Watch as the ratings change and see which image climbs to the top!
+
